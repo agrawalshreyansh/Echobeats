@@ -111,52 +111,6 @@ nav ul > :last-child,nav ul>:nth-child(5){
 }
 
 
-@media screen and (max-width: 600px) {
-    nav{
-        margin-top: 3px;
-    }
-    .nav-links-ph {
-      width: 100%;
-      flex-direction: column !important;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    
-  
-    .navbar-toggle {
-      display: flex;
-      height: 40px;
-    }
-  
-  
-    .navbar-toggle img {
-        margin-right: 10px;
-        height: 35px;
-        width: auto;
-        margin-top: 3px;
-    }
-
-    .navbar-links ul {
-      text-align: center;
-      
-    }
-
-    .Cart-container {
-        display: none ;
-    }
-
-    .product-category img {
-        height: 100px;
-        align-items: center;
-    }
-
-    .slide-container-text {
-        display: none;
-    }  
-  }
 
 .container-1 {
     display: inline;
@@ -217,7 +171,6 @@ nav ul > :last-child,nav ul>:nth-child(5){
     display: flex;
     width: 500%;
     height: 700px;
-    margin: 0;
 }
 
 .slide img {
