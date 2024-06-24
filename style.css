@@ -25,6 +25,10 @@ nav ul {
     padding: 0;
 }
 
+nav ul > :last-child,nav ul>:nth-child(5){
+    display: none;
+}
+
 .nav-links ul li{
     padding-left: 30px;
     padding-right: 30px;  
@@ -33,6 +37,11 @@ nav ul {
 .navbar-toggle {
     display: none;
     cursor :pointer;
+}
+
+#closenavbar{
+    display: none;
+    color: white;
 }
 
 .nav-links-ph {
@@ -93,10 +102,19 @@ nav ul {
     
 }
 
-
+.placeclosebtn{
+    position: relative;
+    top: -125px;
+    left: 338px;
+    right: 0px;
+    bottom: 0px;
+}
 
 
 @media screen and (max-width: 600px) {
+    nav{
+        margin-top: 3px;
+    }
     .nav-links-ph {
       width: 100%;
       flex-direction: column !important;
@@ -105,6 +123,8 @@ nav ul {
     .nav-links {
         display: none;
     }
+
+    
   
     .navbar-toggle {
       display: flex;
@@ -112,6 +132,13 @@ nav ul {
     }
   
   
+    .navbar-toggle img {
+        margin-right: 10px;
+        height: 35px;
+        width: auto;
+        margin-top: 3px;
+    }
+
     .navbar-links ul {
       text-align: center;
       
@@ -158,10 +185,13 @@ nav ul {
 
 .slide-container-text {
     height: 600px;
-    align-content: center;
     font-size: 40px;
     max-width: 57%;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
 }
 
 

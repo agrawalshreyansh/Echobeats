@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,111 +8,108 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
+
 <body>
-        <nav class="navbar">
-            <div class="container-1">
-                <a href="">ECHOBEATS</a>
-            </div>
-            <div class="navbar-toggle" id="navbar-toggle">
-                <a href="javascript:void(0);" class="toggle-button" onclick="toggleNavbar()">
-                    <img src="media/MENU.png" style="height: 40px;">
-                </a>
-
-            </div>
-            <div class="nav-links" id="navbar-links">
-                <ul class="navbar-menu"  >
-                    <li><a href="">Headphones</a></li>   
-                    <li><a href="">Earphones</a></li>
-                    <li><a href="">Speakers</a></li>
-                    <li><a href="">Contact us</a></li> 
+    <nav class="navbar">
+        <div class="container-1">
+            <a href="">ECHOBEATS</a>
+        </div>
+        <div class="nav-links" id="navbar-links">
+            <ul class="navbar-menu">
+                <li><a href="">Headphones</a></li>
+                <li><a href="">Earphones</a></li>
+                <li><a href="">Speakers</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Account</a></li>
+                <li><a href="">Cart</a></li>
+            </ul>
+        </div>
+        
+        <div class="Cart-container">
+            <a href="" class="account">
+                <img src="media/account.png">
+            </a>
+            <a href="" class="cart">
+                <ul>
+                    <li><img src="media\cart.png"></li>
+                    <li>My Cart(0)</li>
                 </ul>
-            </div>
+            </a>
+        </div>
 
-            <div class="nav-links-ph" id="nav-links-ph">
-                <ul class="navbar-menu-ph"  >
-                    <li><a href="">Headphones</a></li>   
-                    <li><a href="">Earphones</a></li>
-                    <li><a href="">Speakers</a></li>
-                    <li><a href="">Account</a></li>
-                    <li><a href="">Cart</a></li>
-                    <li><a href="">Contact us</a></li> 
-                </ul>
-            </div>
-            
-                <div class="Cart-container">
-                    <a href="" class="account">
-                        <img src="media/account.png">
-                    </a>
-                    <a href=""  class="cart">
-                        <ul>
-                            <li><img src="media\cart.png"></li>
-                            <li>My Cart(0)</li>
-                        </ul>
-                    </a>
+
+        <div class="navbar-toggle" id="navbar-toggle">
+            <a href="javascript:void(0);" class="toggle-button" onclick="toggleNavbar(true)">
+                <img src="media/MENU.png" >
+            </a>
+            <a onclick="toggleNavbar('close')" id="closenavbar">X</a>
+    
+        </div>
+
+    </nav>
+    <section class="slide-container">
+        <div class="slide-container-text">
+            EXPLORE OUR LATEST COLLECTION OF SPEAKERS, EARPHONES, HEADPHONES AND MORE.....
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="R1">
+                <input type="radio" name="radio-btn" id="R2">
+                <input type="radio" name="radio-btn" id="R3">
+
+                <div class="slide first">
+                    <img src="Products/P1.webp">
                 </div>
-        </nav>
-        <section class="slide-container">
-            <div class="slide-container-text">
-                EXPLORE OUR LATEST COLLECTION OF SPEAKERS, EARPHONES, HEADPHONES AND MORE.....
-            </div>
-            <div class="slider">     
-                <div class="slides">
-                   <input type="radio" name="radio-btn" id="R1">
-                   <input type="radio" name="radio-btn" id="R2">
-                   <input type="radio" name="radio-btn" id="R3">
-
-                   <div class="slide first">
-                    <img src="Products/P1.webp" >
-                   </div>
-                   <div class="slide">
+                <div class="slide">
                     <img src="Products/P2.webp">
-                   </div>
-                   <div class="slide">
+                </div>
+                <div class="slide">
                     <img src="Products/P3.webp">
-                   </div>
+                </div>
 
-                   <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                   </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
 
-                   <div class="navigation-manual">
-                        <label for="R1" class="manual-btn"></label>
-                        <label for="R2" class="manual-btn"></label>
-                        <label for="R3" class="manual-btn"></label>
-                   </div>
+                <div class="navigation-manual">
+                    <label for="R1" class="manual-btn"></label>
+                    <label for="R2" class="manual-btn"></label>
+                    <label for="R3" class="manual-btn"></label>
                 </div>
             </div>
-        </section>
-        <div style="margin-left: 60px; color: aliceblue;">
-            <h1>Shop by Categories</h1>
         </div>
-        <div class="product-category">
-            <a href="">
-                <img src="Products/headphones2.webp">
-                <h3>Headphones</h3>
-            </a>  
-            <a href="">  
-                <img src="Products/earbuds3.webp">
-                <h3>Earbuds</h3>
-            </a>    
-            <a href="">    
-                <img src="Products/wired_ear.webp">
-                <h3>Neckbands</h3>
-            </a>
-            <a href="">    
-                <img src="Products/speaker.webp">
-                <h3>Speakers</h3>
-            </a>    
-            <a href="">
-                <img src="Products/wired_earp.webp">
-                <h3>Earphones</h3>
-            </a>
-            <a href="">
-                <img src="Products/soundbar2.webp">
-                <h3>Soundbars</h3>
-            </a>
-        </div>
+    </section>
+    <div style="margin-left: 60px; color: aliceblue;">
+        <h1>Shop by Categories</h1>
+    </div>
+    <div class="product-category">
+        <a href="">
+            <img src="Products/headphones2.webp">
+            <h3>Headphones</h3>
+        </a>
+        <a href="">
+            <img src="Products/earbuds3.webp">
+            <h3>Earbuds</h3>
+        </a>
+        <a href="">
+            <img src="Products/wired_ear.webp">
+            <h3>Neckbands</h3>
+        </a>
+        <a href="">
+            <img src="Products/speaker.webp">
+            <h3>Speakers</h3>
+        </a>
+        <a href="">
+            <img src="Products/wired_earp.webp">
+            <h3>Earphones</h3>
+        </a>
+        <a href="">
+            <img src="Products/soundbar2.webp">
+            <h3>Soundbars</h3>
+        </a>
+    </div>
 </body>
+
 </html>
