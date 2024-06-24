@@ -2,6 +2,7 @@ body {
     background-color: #282828;
     border-radius: 10px;
     margin: 0;
+    
 }
 nav {
     background-color: none;
@@ -29,6 +30,107 @@ nav ul {
     padding-right: 30px;  
 }
 
+.navbar-toggle {
+    display: none;
+    cursor :pointer;
+}
+
+.nav-links-ph {
+    display: none;
+}
+
+.product-category {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-category a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.product-category img {
+    background-color: #FFD700;
+    border-radius: 50%;
+    height: 130px;
+}
+
+.product-category h3 {
+    text-align: center;
+    padding-left: 5px;
+}
+
+.Cart-container {
+    display: flex;
+}
+
+.Cart-container img{
+    height: 35px;
+    padding-top: 5px;
+}
+
+.Cart-container ul{
+   display: flex;
+   align-items: center;
+}
+
+.Cart-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.Cart-container .cart {
+    background-color: #FFD700;
+}
+
+.Cart-container .account {
+    padding-right: 20px;
+    margin-top: 7px;
+    
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .nav-links-ph {
+      width: 100%;
+      flex-direction: column !important;
+    }
+
+    .nav-links {
+        display: none;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+      height: 40px;
+    }
+  
+  
+    .navbar-links ul {
+      text-align: center;
+      
+    }
+
+    .Cart-container {
+        display: none ;
+    }
+
+    .product-category img {
+        height: 100px;
+        align-items: center;
+    }
+
+    .slide-container-text {
+        display: none;
+    }  
+  }
+
 .container-1 {
     display: inline;
     align-content: center;
@@ -43,44 +145,6 @@ nav ul {
 }
 
 
-.Cart-container {
-    background-color: #FFD700  ;
-}
-
-.Cart-container img{
-    height: 35px;
-    padding-top: 5px;
-}
-
-.Cart-container ul{
-   display: flex;
-   align-items: center;
-   
-}
-
-.Cart-container a {
-    color: black;
-    text-decoration: none;
-}
-
-.product-category {
-    display: flex;
-    justify-content: space-around;
-    
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.product-category img {
-    background-color: #FFD700;
-    border-radius: 50%;
-    height: 130px;
-}
-
-.product-category h3 {
-    text-align: center;
-    padding-left: 5px;
-}
 
 
 
@@ -99,6 +163,7 @@ nav ul {
     max-width: 57%;
     color: white;
 }
+
 
 
 
